@@ -115,11 +115,30 @@
 
 \uline{Bsp}: Ein Baum wächst 20cm pro Jahr.
 
-Rekursiv: $H(x) = H(x-1) + 20$
+rekursiv (indirekte Berechnung): $H(x) = H(x-1) + 20$
 
-Explizit: $H(x) = 20*x$
+explizit (direkte Berechnung): $H(x) = 20*x$
 
+$x,n \in \mathbb{N}$, wobei $H(x)$ die Höhe des Baums nach $x$ Jahren in cm.
 
+$H_n  = H(n) = 20 * n$
 
+\rule{\textwidth}{0.4mm}\\
+
+\uline{Allgemeines diskretes lineares Wachstums Modell (WM)}:
+
+rekursiv: $N_n = N_{n-1} + a$
+
+explizit: $N_n = N_0 + a * n$
+
+$a \in \mathbb{R}, n \in \mathbb{N}$
+
+$a > 0$: $N_n$ zunehmend 
+
+$a < 0$: $N_n$ abnehmend
+
+$a = 0$: $N_n$ konstant
+
+$N: \mathbb{N} \rightarrow \mathbb{R}$ Folge (ist eine Funktion / Abbildung)
 
 \end{document}
