@@ -1,0 +1,125 @@
+\documentclass[18pt,a4paper]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[right=2cm,left=2cm,top=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+\usetikzlibrary{arrows}
+\usetikzlibrary{trees}
+\tikzset{
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    },
+  arn_n/.style = {treenode, circle, black,  draw=black,
+    fill=white, text width=1.5em},% arbre rouge noir, noeud noir
+}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+%\author{kyriakosschwarz}
+\title{Mathematik für Biologie}
+
+\newenvironment{rcases}
+  {\left.\begin{aligned}}
+  {\end{aligned}\right\rbrace}
+
+%Math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ulem}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%\usepackage{relsize}
+
+%PageStyle
+%\usepackage[ngerman]{babel} % deutsche Silbentrennung
+\usepackage[utf8]{inputenc} 
+\usepackage{fancyhdr, graphicx}
+
+\usepackage{parskip}
+\setlength{\textwidth}{17cm}
+\setlength{\oddsidemargin}{-0.5cm}
+
+
+% Shortcommands
+\newcommand{\Bold}[1]{\textbf{#1}} %Boldface
+\newcommand{\Kursiv}[1]{\textit{#1}} %Italic
+\newcommand{\T}[1]{\text{#1}} %Textmode
+\newcommand{\Nicht}[1]{\T{\sout{$ #1 $}}} %Streicht Shit durch
+
+%Arrows
+\newcommand{\lra}{\leftrightarrow} 
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lral}{\longleftrightarrow}
+\newcommand{\ral}{\longrightarrow}
+\newcommand{\lal}{\longleftarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Lral}{\Longleftrightarrow}
+\newcommand{\Ral}{\Longrightarrow}
+\newcommand{\Lal}{\Longleftarrow}
+
+\newcommand{\ts}{\textsuperscript}
+
+%Mine(new)
+\newcommand{\tab}{\hspace*{2em}}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+
+%Metadata
+%\fancyfoot[C]{If you use this documentation for a exam, you should offer a beer to the authors!}
+\title{
+	\vspace{5cm}
+	Mathematik für Biologie \\
+}
+\author{Uni Bern}
+\date{HS 2015}
+
+
+
+\begin{document}
+
+% Titelbild
+\maketitle
+\thispagestyle{fancy}
+\newpage
+
+% Inhaltsverzeichnis
+%\pagenumbering{Roman}
+\tableofcontents	  	
+\newpage
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+% Inhalt Start
+
+\chapter{Erste Woche}
+
+
+\section{Lineares Wachstum}
+
+\uline{Bsp}: Ein Baum wächst 20cm pro Jahr.
+
+Rekursiv: $H(x) = H(x-1) + 20$
+
+Explizit: $H(x) = 20*x$
+
+
+
+
+\end{document}
