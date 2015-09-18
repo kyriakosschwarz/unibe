@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.15)  17 SEP 2015 11:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.15)  18 SEP 2015 07:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -959,7 +959,7 @@ Class scrreprt Warning: Usage of package `fancyhdr' together
 (scrreprt)              I'd suggest to use 
 (scrreprt)              package `scrpage2' or `scrlayer-scrpage'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `fancyhdr' on input line 47.
+(scrreprt)              package `fancyhdr' on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip55
@@ -978,7 +978,7 @@ Class scrreprt Warning: Usage of package `parskip' together
 (scrreprt)              I'd suggest to use option
 (scrreprt)              `parskip' with one of it's several values.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `parskip' on input line 49.
+(scrreprt)              package `parskip' on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
@@ -997,25 +997,25 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 )) (./ETI_HS14.aux)
 \openout1 = `ETI_HS14.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    ... okay on input line 95.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1112,60 +1112,60 @@ e
 ))
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 98.
+(Font)              size <17.28> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 98.
+(Font)              size <17.28> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <37.33209> not available
 
-(Font)              size <24.88> substituted on input line 98.
+(Font)              size <24.88> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <25.92004> not available
-(Font)              size <24.88> substituted on input line 98.
+(Font)              size <24.88> substituted on input line 99.
 
-LaTeX Font Info:    Calculating math sizes for size <25.92004> on input line 98
+LaTeX Font Info:    Calculating math sizes for size <25.92004> on input line 99
 .
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.14395> not available
-(Font)              size <17.28> substituted on input line 98.
+(Font)              size <17.28> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.96002> not available
-(Font)              size <12> substituted on input line 98.
+(Font)              size <12> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <25.92004> not available
-(Font)              size <24.88> substituted on input line 98.
+(Font)              size <24.88> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <18.14395> not available
-(Font)              size <17.28> substituted on input line 98.
+(Font)              size <17.28> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.96002> not available
-(Font)              size <12> substituted on input line 98.
+(Font)              size <12> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <25.92004> not available
-(Font)              size <24.88> substituted on input line 98.
+(Font)              size <24.88> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <18.14395> not available
-(Font)              size <17.28> substituted on input line 98.
+(Font)              size <17.28> substituted on input line 99.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.96002> not available
-(Font)              size <12> substituted on input line 98.
+(Font)              size <12> substituted on input line 99.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1221,39 +1221,72 @@ Class scrreprt Warning: \float@addtolists detected!
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <25.92004> not available
 
-(Font)              size <24.88> substituted on input line 114.
+(Font)              size <24.88> substituted on input line 115.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 [1
 
-] [2] (./ETI_HS14.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 155.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+[3] (./ETI_HS14.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 12.45209pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 15865 strings out of 493304
- 288944 string characters out of 6139871
- 394488 words of memory out of 5000000
- 18992 multiletter control sequences out of 15000+600000
- 12776 words of font info for 50 fonts, out of 8000000 for 9000
+ 15869 strings out of 493304
+ 288997 string characters out of 6139871
+ 394487 words of memory out of 5000000
+ 18995 multiletter control sequences out of 15000+600000
+ 13116 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,7n,71p,435b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ETI_HS14.pdf (4 pages, 57362 bytes).
+ 65i,8n,71p,435b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on ETI_HS14.pdf (5 pages, 88598 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

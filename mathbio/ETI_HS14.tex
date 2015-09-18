@@ -37,6 +37,7 @@
 
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{textcomp}
 
 %\usepackage{relsize}
 
@@ -117,11 +118,11 @@
 
 rekursiv (indirekte Berechnung): $H(x) = H(x-1) + 20$
 
-explizit (direkte Berechnung): $H(x) = 20*x$
+explizit (direkte Berechnung): $H(x) = 20 \cdot x$
 
 $x,n \in \mathbb{N}$, wobei $H(x)$ die Höhe des Baums nach $x$ Jahren in cm.
 
-$H_n  = H(n) = 20 * n$
+$H_n  = H(n) = 20 \cdot n$
 
 \rule{\textwidth}{0.4mm}\\
 
@@ -129,7 +130,7 @@ $H_n  = H(n) = 20 * n$
 
 rekursiv: $N_n = N_{n-1} + a$
 
-explizit: $N_n = N_0 + a * n$
+explizit: $N_n = N_0 + a \cdot n$
 
 $a \in \mathbb{R}, n \in \mathbb{N}$
 
@@ -140,5 +141,79 @@ $a < 0$: $N_n$ abnehmend
 $a = 0$: $N_n$ konstant
 
 $N: \mathbb{N} \rightarrow \mathbb{R}$ Folge (ist eine Funktion / Abbildung)
+
+\rule{\textwidth}{0.4mm}\\
+
+Vom rekursiven zum expliziten:
+
+$N_{n+1} = N_n + 1a = N_{n-1} + a + a = N_{n-1} + 2a = N_{n-2} + a + 2a = N_{n-2} + 3a = ... = N_0 + (n + 1) a$
+
+\uline{Beispiel} (Dolbearsche Gesetz)
+
+$T_n = 1/7n + 40/9$
+
+$T_n$: Temperatur gemessen in \textdegree C
+
+$n$: die Anzahl der Zirplaute in einer Minute
+
+$n = 7$: $T = ... = 5.\overline{4}$ 
+
+$n = 14$: $T = ... = 6.\overline{4}$
+
+...
+
+$n = 105$: $T = ... = 19.\overline{4}$
+
+Bereich: $5$\textdegree C - $30$\textdegree C
+
+\uline{Beispiel}: Gewicht einer Insektenlarve zu jeder vollen Stunde:
+
+$G(n) = 0.01n + 1, n \in \mathbb{N}$
+
+$G(t) = 0.01t + 1, t \in \mathbb{R+}$
+
+\rule{\textwidth}{0.4mm}\\
+
+\uline{Allgemeines kontinuierliches lineares Wachstums Modell (WM)}:
+
+$N_t = N_0 + t \cdot a, t \in \mathbb{R+}$
+
+$N: \mathbb{R} \rightarrow \mathbb{R}$, $t \mapsto N(t)$ Funktion/Abbildung
+
+\rule{\textwidth}{0.4mm}\\
+
+Wachstumsrate (Wachstum \uline{relativ}) zur Gesamtgrösse)
+
+diskret: $r_n = \frac{\textcolor{red}{N_{n+1} - N_n}}{N_n} = \frac{a}{N_n} = \frac{a}{N_0 + n \cdot a}$
+
+$\textcolor{red}{N_{n+1} - N_n} = \frac{N_{n+1} - N_n}{(n+1) - n}$
+
+kontinuierlich: $r = \frac{N'(t)}{N(t)} = \frac{(N_0 + t \cdot a)'}{N_0 + t \cdot a} = \frac{a}{N_0 + t \cdot a}, t \in \mathbb{R+}$
+
+$\frac{N(t + \Delta t) - N(t)}{(t + \Delta t) - t}$
+
+\rule{\textwidth}{0.4mm}\\
+
+\section{Exponentielles Wachstum}
+
+Beispiel (Zellteilung)
+
+Eine Zelle teile sich zweimal pro Stunde
+
+$N(n)$: die Anzahl Zellen nach $n$ Stunden
+
+$N_0 = 1, N_1 = 4, N_2 = 16, N_3 = 64, ...$
+
+rekursiv: $N_n = 4N_{n-1}, n = 1, 2, 3, 4, ...$
+
+explizit: $N_n = 4(4N_{n-2}) = 4^2N_{n-2} = ... = 4^nN_0 = 4^n$
+
+\rule{\textwidth}{0.4mm}\\
+
+
+
+
+
+
 
 \end{document}
