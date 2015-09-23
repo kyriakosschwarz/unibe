@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {1.2}Exponentielles Wachstum}{3}
 \contentsline {chapter}{\numberline {2}Zweite Woche}{5}
 \contentsline {section}{\numberline {2.1}Wachstumsrate}{5}
+\contentsline {section}{\numberline {2.2}Kontinuierliche Wachstumsrate}{6}

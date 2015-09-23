@@ -261,4 +261,67 @@ $r_n$ konst. $\Rightarrow r_n = c \Rightarrow \frac{N_{n+1} - N_n}{N_n} = c \Rig
 
 \uline{Fazit}: Ein diskretes exponentielles WM ist durch eine konstante Wachstumsrate charakterisiert.
 
+\rule{\textwidth}{0.4mm}\\
+
+\uline{Bemerkungen}
+
+\begin{itemize}
+	\item $b-1 > 0$ exp. Wachstum
+	\item $b-1 < 0$ exp. Zerfall
+	\item $b-1 = 0$ $N_n$ bleibt konstant
+\end{itemize}
+
+\rule{\textwidth}{0.4mm}\\
+
+\section{Kontinuierliche Wachstumsrate}
+
+$N: \mathbb{R+} \rightarrow \mathbb{R}$ reele Funktion $N(t)$
+
+durchschnittliche Änderung pro Zeiteinheit im Bereich von $t$ bis $t+\Delta t$, wobei $\Delta t >0: \frac{N(t+\Delta t) - N(t)}{\Delta t}$
+
+\uline{momentane Wachstumsgeschwindigkeit zum Zeitpunkt $t$}
+
+$lim_{\Delta t \rightarrow 0}\frac{N(t+\Delta t) - N(t)}{\Delta t} = N'(t)$
+
+konkav? konvex?
+
+\rule{\textwidth}{0.4mm}\\
+
+\uline{Kontinuierliche Wachstumsrate}
+
+$r(t) = \frac{N'(t)}{N(t)}$
+
+\uline{kont. exp. WM}
+
+Konstante Wachstumsrate
+
+$\frac{N'(t)}{N(t)} = c$
+
+Differentialgleichung (DG): gesucht ist die Funktion $N(t)$. In dieser Gleichung finden wir auch die Ableitung $N'(t)$ von $N(t)$
+
+$N'(t) = c\cdot N(t)$
+
+$N(t) = e^{c\cdot t}$ ist eine Lösung der DG. 
+
+Überprüfung: $N'(t) = (e^{c t})' = c\cdot e^{c t} = c \cdot N(t)$ \checkmark
+
+Anfangsbedingung: $N(0) = N_0$
+
+$N(t) = e^{c t} \cdot N_0$
+
+$t = 0$: $1\cdot N_0 = N_0$ \checkmark
+
+$N'(t) = (e^{c t} \cdot N_0)' = c\cdot(e^{c t} \cdot N_0) = c \cdot N(t)$ \checkmark
+
+ist eine (der vielen??) Lösung der DG mit Anfangsbedingung $N(0) = N_0$
+
+\rule{\textwidth}{0.4mm}\\
+
+
+
+
+
+
+
+
 \end{document}
