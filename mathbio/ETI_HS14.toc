@@ -1,3 +1,5 @@
 \contentsline {chapter}{\numberline {1}Erste Woche}{1}
 \contentsline {section}{\numberline {1.1}Lineares Wachstum}{1}
 \contentsline {section}{\numberline {1.2}Exponentielles Wachstum}{3}
+\contentsline {chapter}{\numberline {2}Zweite Woche}{5}
+\contentsline {section}{\numberline {2.1}Wachstumsrate}{5}

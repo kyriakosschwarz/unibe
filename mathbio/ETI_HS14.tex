@@ -24,9 +24,9 @@
 %\author{kyriakosschwarz}
 \title{Mathematik für Biologie}
 
-\newenvironment{rcases}
-  {\left.\begin{aligned}}
-  {\end{aligned}\right\rbrace}
+%\newenvironment{rcases}
+ % {\left.\begin{aligned}}
+  %{\end{aligned}\right\rbrace}
 
 %Math
 \usepackage{amsmath}
@@ -38,6 +38,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{textcomp}
+\usepackage{mathtools}
 
 %\usepackage{relsize}
 
@@ -240,20 +241,24 @@ $log(N_n) = n\cdot log(4)$
 
 \rule{\textwidth}{0.4mm}\\
 
+\chapter{Zweite Woche}
 
+\section{Wachstumsrate}
 
+\uline{Diskrete Wachstumsrate}
 
+$r_n = \frac{N_{n+1} - N_n}{N_n} = \frac{\frac{N_{n+1} - N_n}{n+1 -n}}{N_n}$
 
+Im diskreten exponentiellen Modell:
 
+$r_n = \frac{b\cdot N_n - N_n}{N_n} = b-1$ konstant
 
+(diskretes exponentielles Wachstum $\Rightarrow$ $r_n$ konstant)
 
+\uline{Frage}: $r_n$ konstant $\xRightarrow{?}$ $N_n$ wächst exponentiell
 
+$r_n$ konst. $\Rightarrow r_n = c \Rightarrow \frac{N_{n+1} - N_n}{N_n} = c \Rightarrow N_{n+1} - N_n = c\cdot N_n \Rightarrow N_{n+1} = (c+1) N_n$ (diskr. exp. W.)
 
-
-
-
-
-
-
+\uline{Fazit}: Ein diskretes exponentielles WM ist durch eine konstante Wachstumsrate charakterisiert.
 
 \end{document}
