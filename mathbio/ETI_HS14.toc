@@ -4,3 +4,4 @@
 \contentsline {chapter}{\numberline {2}Zweite Woche}{5}
 \contentsline {section}{\numberline {2.1}Wachstumsrate}{5}
 \contentsline {section}{\numberline {2.2}Kontinuierliche Wachstumsrate}{6}
+\contentsline {section}{\numberline {2.3}Logarithmisches Wachstum}{8}
