@@ -311,7 +311,7 @@ $N(t) = e^{c t} \cdot N_0$
 
 $t = 0$: $1\cdot N_0 = N_0$ \checkmark
 
-$N'(t) = (e^{c t} \cdot N_0)' = c\cdot(e^{c t} \cdot N_0) = c \cdot N(t)$ \checkmark
+$N'(t) = (N_0 \cdot e^{c t})' = c\cdot(N_0 \cdot e^{c t}) = c \cdot N(t)$ \checkmark
 
 ist eine (der vielen??) Lösung der DG mit Anfangsbedingung $N(0) = N_0$
 
@@ -319,7 +319,7 @@ ist eine (der vielen??) Lösung der DG mit Anfangsbedingung $N(0) = N_0$
 
 \uline{Kontinuierliches exponentielles Wachstumsmodell}
 
-$\frac{N'(t)}{N(t)} = r$ DG
+$\frac{N'(t)}{N(t)} = r$ \tab DG
 
 $N(t) = e^{rt}$ ist eine Lösung der DG
 
@@ -331,23 +331,23 @@ Konvex: Steigung nimmt zu oder $\underbrace{N''(t)}_{= r^2 \cdot N_0 \cdot e^{rt
 
 Eindeutig? \uline{Antwort}: 
 
-Sei $x(t)$ eine beliebige Lösung der DG
+Sei $X(t)$ eine beliebige Lösung der DG
 
-D.h. $\frac{x'(t)}{x(t)} = r \Leftrightarrow x'(t) = r \cdot x(t)$
+D.h. $\frac{X'(t)}{X(t)} = r \Leftrightarrow X'(t) = r \cdot X(t)$
 
-$N'(t) = r \cdot N(t)$ 
+\tab \tab \tab \tab $N'(t) = r \cdot N(t)$ 
 
-$(\frac{x(t)}{e^{rt}})' = (e^{-rt} \cdot x(t))' = (e^{-rt})' \cdot x(t) + e^{-rt} \cdot (x(t))' = -r\cdot e^{-rt} \cdot x(t) + e^{-rt} x'(t) = -r\cdot e^{-rt} \cdot x(t) + e^{-rt} \cdot r\cdot x(t) = 0$
+$(\frac{X(t)}{e^{rt}})' = (e^{-rt} \cdot X(t))' = (e^{-rt})' \cdot X(t) + e^{-rt} \cdot (X(t))' = -r\cdot e^{-rt} \cdot X(t) + e^{-rt} \cdot X'(t) = -r\cdot e^{-rt} \cdot X(t) + e^{-rt} \cdot r\cdot X(t) = 0$
 
-d.h. $\frac{x(t)}{e^{rt}} = c \Leftrightarrow x(t) = c\cdot e^{rt}$ die exponentielle Funktion ist eindeutig
+d.h. $\frac{X(t)}{e^{rt}} = c \Leftrightarrow X(t) = c\cdot e^{rt}$ die exponentielle Funktion ist eindeutig
 
-Anfangsbedingung $x(0) = N_0$
+Anfangsbedingung $X(0) = N_0$
 
 $c \cdot e^{r\cdot 0} = N_0$
 
 $c = N_0$
 
-d.h. $x(t) = N_0 \cdot e^{rt}$ ist eine eindeutige Lösung der DG $x'(t) = r\cdot x(t)$ mit A.B. $x(0) = N_0$
+d.h. $X(t) = N_0 \cdot e^{rt}$ ist eine eindeutige Lösung der DG $X'(t) = r\cdot X(t)$ mit A.B. $X(0) = N_0$
 
 \rule{\textwidth}{0.4mm}\\
 
@@ -357,7 +357,7 @@ $\frac{55-50}{50} = \frac{5}{50} = 0.1 = 10\%$
 
 $\frac{5005-5000}{5000} = \frac{5}{5000} = 0.001 = 0.1\%$
 
-Ein relativer Gewichtsunterschied von $\sim 2\%$ eines in einer ruhender Hand gehaltenen Gegenstands wird erkannt. D.h. bei $50$gr eine Gewichtsunterschied von $1$gr.
+Ein relativer Gewichtsunterschied von $\sim 2\%$ eines in einer ruhenden Hand gehaltenen Gegenstands wird erkannt. D.h. bei $50$gr ein Gewichtsunterschied von $1$gr.
 
 \rule{\textwidth}{0.4mm}\\
 
@@ -381,7 +381,7 @@ umgeformt: $\frac{\Delta W(S)}{\Delta S} = \frac{K}{S}$
 
 für klein werd. $\Delta S$: $\lim_{\Delta S\to 0} \frac{\Delta W(S)}{\Delta S} = W'(S) = \frac{K}{S}$
 
-gesucht ist $W(S)$ in der Gleichung taucht $W'(S)$ auf $\rightarrow$ D.G.
+gesucht ist $W(S)$. In der Gleichung taucht $W'(S)$ auf $\rightarrow$ D.G.
 
 $\int K \cdot \frac{1}{S} dS = K \cdot \int \frac{1}{S} dS = K \cdot ln(S) + c$
 
@@ -419,7 +419,7 @@ $W(S) = ln(1) = 0$
 
 \uline{Darstellung}:
 
-$W(S) = a\cdot ln(bS) = a\cdot (ln(b) + ln(S) = a\cdot ln(b) + a\cdot ln(S)$
+$W(S) = a\cdot ln(bS) = a\cdot (ln(b) + ln(S)) = a\cdot ln(b) + a\cdot ln(S)$
 
 $log_{10}(S) = \frac{ln(S)}{ln(10)}$
 
