@@ -34,6 +34,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{ulem}
+\usepackage[makeroom]{cancel}
 
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -539,7 +540,41 @@ Solange $0<N(t)<K$ gilt $N'(t)> 0$
 
 \uline{Gleichgewichtszustände}
 
+$N'(t) = 0 \Leftrightarrow r\cdot N(t) (1-\frac{N(t)}{K}) =0$
 
+a. $N(t) = 0$
+
+b. $N(t) = K$
+
+d.h. falls $N_0 =0$ oder $N_0 = K$ dann bleibt $N(t)$ konstant.
+
+\uline{Explizite Lösung von (1)}
+
+Gesucht ist $N(t)$
+
+\uline{Ansatz}: $N(t) = \frac{e^{rt}}{f)t}$
+
+$N'(t) = \frac{r\cdot e^{rt}\cdot f(t) - e^{rt} \cdot f'(t)}{(f(t))^2}$
+
+$\stackrel{(1)}{=} r\cdot \frac{e^{rt}}{f(t)}(1-\frac{e^{rt}}{f(t)\cdot K})=r\cdot N(t)(1-\frac{N(t)}{K})$
+
+$\Leftrightarrow r\cdot e^{rt} \cdot f(t) - e^{rt} \cdot f'(t) = r\cdot e^{rt} \cdot f(t) (1-\frac{e^{rt}}{k\cdot f(t)})$
+
+$\Leftrightarrow \cancel{r\cdot e^{rt} \cdot f(t)} - e^{rt} \cdot f'(t) = \cancel{r\cdot e^{rt} \cdot f(t)} - r\cdot \frac{(e^{rt})^2}{K}$
+
+$\Leftrightarrow f'(t) = \frac{r\cdot e^{rt}}{K}$
+
+$f(t) = \frac{1}{K} e^{rt} + c$
+
+(überpr. $f'(t) = \frac{1}{K} \cdot r \cdot e^{rt} = \frac{r\cdot e^{rt}}{K} \checkmark$)
+
+$N(t)= \frac{e^{rt}}{\frac{1}{K}\cdot e^{rt} + c}$ (2)
+
+$\Leftrightarrow \frac{1}{N_0} = \frac{1}{K} + c$
+
+$N(0) = \frac{1}{\frac{1}{K} + c} = N_0$
+
+$\Leftrightarrow c = \frac{1}{N_0} - \frac{1}{K} = \frac{K-N_0}{K\cdot N_0}$ (3)
 
 
 
