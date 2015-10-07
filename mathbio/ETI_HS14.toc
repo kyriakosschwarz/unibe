@@ -5,3 +5,6 @@
 \contentsline {section}{\numberline {2.1}Wachstumsrate}{5}
 \contentsline {section}{\numberline {2.2}Kontinuierliche Wachstumsrate}{6}
 \contentsline {section}{\numberline {2.3}Logarithmisches Wachstum}{8}
+\contentsline {chapter}{\numberline {3}Dritte Woche}{11}
+\contentsline {section}{\numberline {3.1}Logarithmisches Wachstum (vort.)}{11}
+\contentsline {section}{\numberline {3.2}Logistisches Wachstum}{12}

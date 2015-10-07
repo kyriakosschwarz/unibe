@@ -183,7 +183,7 @@ $N: \mathbb{R} \rightarrow \mathbb{R}$, $t \mapsto N(t)$ Funktion/Abbildung
 
 \rule{\textwidth}{0.4mm}\\
 
-Wachstumsrate (Wachstum \uline{relativ}) zur Gesamtgrösse)
+Wachstumsrate (Wachstum \uline{relativ} zur Gesamtgrösse)
 
 diskret: $r_n = \frac{\textcolor{red}{N_{n+1} - N_n}}{N_n} = \frac{a}{N_n} = \frac{a}{N_0 + n \cdot a}$
 
@@ -426,6 +426,119 @@ $log_{10}(S) = \frac{ln(S)}{ln(10)}$
 $\underbrace{a\cdot ln(b)}_{\substack{\text{konst.}\\y\text{-Achsenabschnitt}}} + \underbrace{a\cdot ln(10)}_{\text{Steigung}} \cdot log_{10}(S)$
 
 \rule{\textwidth}{0.4mm}\\
+
+\chapter{Dritte Woche}
+
+\section{Logarithmisches Wachstum (vort.)}
+
+$W(S) = a \cdot ln(b\cdot S)$, $a,b$ konst.
+
+$a = 1, b =2$: $W(S)= ln(2S)$
+
+$(ln = log_e, e \simeq 2.7$ die Eulersche Zahl\\ $ln(x) = y \Leftrightarrow e^y = x)$
+
+$W(1) = ln(2) \simeq 0.69$
+
+$W(2000) = ln(4000) \simeq 8.3$
+
+$W(10000) = ln(20000) \simeq 9.9$
+
+$W(S) = a\cdot ln(b) + a\cdot ln(S) = \underbrace{a\cdot ln(b)}_{\substack{\text{konst.}\\y\text{-Achsenabschnitt}}} + \underbrace{a\cdot ln(10)}_{\text{Steigung}} \cdot log_{10}(S)$
+
+$W(S) = ln(2) + ln(10) \cdot log_{10}(S) \simeq 0.69 + 2.3 \cdot log_{10}(S)$
+
+$ln(S) \stackrel{?}{=} ln(10) \cdot log_{10}(S)$
+
+Hinweis: $10^{log_{10}(S)} = S$
+
+$ln(10^{log_{10}(S)}) = ln(S)$
+
+$log_{10}(S) \cdot ln(10) = ln(S)$
+
+\rule{\textwidth}{0.4mm}\\
+
+Eindeutigkeit der Lösung der DG $W'(S) = \frac{K}{S}$ mit A.B. $W(S_0)= 0$
+
+Wir haben schon die Lösung $W(S)= k\cdot ln(\frac{S}{S_0})$ gefunden
+
+Sei $X(S)$ eine beliebige Lösung, d.h. $X'(S)= \frac{K}{S}$ und $X(S_0) = 0$
+
+$W'(S) - X'(S) = 0 \Leftrightarrow W(S) - X(S) = c$ für eine Konstante $c$ $(1)$
+
+für $S = S_0$: $W(S_0) - X(S_0) = c \Leftrightarrow 0-0 = c \Leftrightarrow c =0$ $(2)$
+
+$\stackrel{(1)(2)}{\Rightarrow} X(S) = W(S)$  
+ 
+\rule{\textwidth}{0.4mm}\\
+
+\section{Logistisches Wachstum}
+
+exp. Wachstum $\frac{N'(t)}{N(t)} = \underbrace{r}_{\text{konst.}} + \underbrace{a}_{\text{neg. konst.}}\cdot N(t)$ $(1)$
+
+Kommt das Wachstum zum Stehen?
+
+$0 = r + a \cdot \underbrace{K}_{\text{obere Schranke}}$
+
+d.h.: $a =\frac{-r}{K}$ $(2)$ 
+
+$\stackrel{(1)(2)}{\Rightarrow} \frac{N'(t)}{N(t)} = r - \frac{r}{K} \cdot N(t) = r(1 - \frac{N(t)}{K})$
+
+$\frac{N'(t)}{N(t)} = r(1 - \frac{N(t)}{K})$ DG, $N(t) = ?$
+
+\rule{\textwidth}{0.4mm}\\
+
+exp. WM $\frac{N'(t)}{N(t)} = r$, eine obere Schranke $K$ einführen
+
+$\frac{N'(t)}{N(t)} = r + \underbrace{a}_{\text{neg. konst.}} \cdot N(t)$
+
+$\frac{N'(t)}{N(t)} = r - \frac{r}{K} \cdot N(t) = r (1 - \frac{N(t)}{K})$ DG $(1)$
+
+A.B. $N(0) = N_0$
+
+\uline{Qualitative Analyse von} $N'(t) = r\cdot N(t) \cdot (1 - \frac{N(t)}{K})$ mit $N_0 < K$
+
+\uline{Anfangsphase}: $N(t)$ ist relativ klein im Vergleich zu $K$ dann ist $\frac{N^2(t)}{K}$ relativ klein
+
+d.h. $N'(t) = r \cdot N(t) - r \cdot \frac{N^2(t)}{K} \simeq r\cdot N(t)$
+
+d.h. $N(t)$ wächst ungefähr exponentiell
+
+z.B. $N_0 = 10$, $K = 10000$
+
+\uline{Mittlere Wachstumsphase} der Term $\frac{N^2(t)}{K}$ ist wichtiger. Dach Wachstum wird abgebremst aber die Population wächst immer noch.
+
+$N'(t) = \underbrace{r\cdot N(t)}_{>0} \underbrace{1-\frac{N(t)}{K}}_{>0}$
+
+\uline{Abflachungsphase} $N(t)$ nähert sich der Zahl $K$ an und das Wachstum kommt fast zum stehen. 
+
+$\underbrace{N'(t)}_{\simeq 0} = r\cdot N(t) 1-\underbrace{\frac{N(t)}{K}}_{\simeq 1}$ 
+
+\uline{Behauptung}: $K$ ist die kleinste obere Schranke für $N(t)$
+
+\uline{Begründung}
+
+1. $K$ ist eine obere Schranke
+
+Es gibt kein $\bar{t}$ so dass $N(t)$ zu diesem Zeitpunkt $\bar{t}$ über $K$ hinauswächst
+
+Gäbe es einen solchen Zeitpunkt $\bar{t}$, dann würde Folgendes gelten:
+
+$N(\bar{t}) = K$
+
+$N'(\bar{t}) > 0$
+
+$N'(\bar{t}) = r\cdot K (1-\frac{K}{K}) = 0$ Wiederspruch
+
+Unsere Annahme ist falsch. Es gibt keinen solchen Zeitpunkt.
+
+d.h. $K$ ist eine obere Schranke für $N(t)$
+
+2. $K$ ist die \uline{kleinste} obere Schranke
+
+Solange $0<N(t)<K$ gilt $N'(t)> 0$
+
+\uline{Gleichgewichtszustände}
+
 
 
 
