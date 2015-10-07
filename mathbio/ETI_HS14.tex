@@ -282,7 +282,7 @@ durchschnittliche Änderung pro Zeiteinheit im Bereich von $t$ bis $t+\Delta t$,
 
 \uline{momentane Wachstumsgeschwindigkeit zum Zeitpunkt $t$}
 
-$lim_{\Delta t \rightarrow 0}\frac{N(t+\Delta t) - N(t)}{\Delta t} = N'(t)$
+$lim_{\Delta t \to 0}\frac{N(t+\Delta t) - N(t)}{\Delta t} = N'(t)$
 
 konkav? konvex?
 
@@ -576,11 +576,25 @@ $N(0) = \frac{1}{\frac{1}{K} + c} = N_0$
 
 $\Leftrightarrow c = \frac{1}{N_0} - \frac{1}{K} = \frac{K-N_0}{K\cdot N_0}$ (3)
 
+$\stackrel{(2)(3)}{\Rightarrow} N(t) = \frac{e^{rt}}{\frac{1}{K} \cdot e^{rt} + \frac{K-N_0}{K\cdot N_0}}$
 
+$\Leftrightarrow N(t) = \frac{K\cdot N_0 \cdot e^{rt}}{N_0 \cdot e^{rt} + K -N_0}$ logistisches WM
 
+\uline{Graphische Darstellung} 
 
+$t=0$: $N(0) = \frac{K\cdot N_0 \cdot 1}{N_0 \cdot 1 + K - N_0} = \frac{K\cdot N_0}{K} = N_0 \checkmark$
 
+$\lim_{t\to \infty} N(t) = \lim_{t\to \infty} \frac{K\cdot N_0 \cdot e^{rt}}{N_0 \cdot e^{rt} + K -N_0} = \lim_{t\to \infty} \frac{K\cdot N_0}{N_0 + \circled{$\frac{K -N_0}{e^{rt}\rightarrow \infty}$}^{\rightarrow 0}} = \frac{K\cdot N_0}{N_0 + 0} = \frac{k\cdot N_0}{N_0} = K \checkmark$
 
+$N'(t) = ... = \frac{K\cdot N_0 (K-N_0) r \cdot e^{et}}{(K+N_0(e^{rt} - 1))^2} > 0$
+
+$N''(t) = ... = \frac{K\cdot N_0 (K-N_0) r^2 e^{rt} (K-N_0 -N_0\cdot e^{rt})}{(K+N_0(e^{rt}-1))^3}$
+
+$N''(t) > 0$ für $t < \frac{ln(\frac{K-N_0}{N_0})}{r}$
+
+$N''(t) < 0$ für $t > \frac{ln(\frac{K-N_0}{N_0})}{r}$
+
+\rule{\textwidth}{0.4mm}\\
 
 
 
