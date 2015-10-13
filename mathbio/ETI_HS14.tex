@@ -664,12 +664,77 @@ $\tilde{K} = K(1-\frac{\frac{r}{2}}{r}) = \frac{K}{2} = 5\cdot 10^5$
 
 \section{Diskretisierung}
 
+\begin{tabular}{| l | l |}
+	\hline			
+	\textbf{diskret} & \textbf{kontinuerling} \\ \hline \hline
+	Folge, $\mathbb{N} \rightarrow \mathbb{R}$ & reele Funktion, $\mathbb{R+} \rightarrow \mathbb{R}$ \\ \hline
+	linear & linear \\ \hline
+	exponentiell & exp. $N'(t)/N(t) = r(t) = r$ \:\:\: DG \\ \hline
+	(logarithmisch) & (logarithmisch) \\ \hline
+	& $\leftarrow$ logistisch $N'(t)/N(t) = r(1-N(t)/K)$ \:\:\: DG \\ \hline
+	\hline  
+\end{tabular}
 
+\vspace{1cm}
+\uline{Diskretisierung}
 
+$N'(t) = r\cdot N(t) (1-\frac{N(t)}{K})$ DG
 
+$lim_{\Delta t \to 0}\frac{N(t+\Delta t) - N(t)}{\Delta t} = r\cdot N(t) (1-\frac{N(t)}{K})$
 
+(Annäherung) $\simeq \frac{N(t+\Delta t) - N(t)}{\Delta t} = r\cdot N(t) (1-\frac{N(t)}{K})$
 
+$\Delta t = 1$
 
+$\frac{N(t+1) - N(t)}{1} = r\cdot N(t) (1-\frac{N(t)}{K})$, $t \in \mathbb{R+}$
+
+$\frac{N(n+1) - N(n)}{1} = r\cdot N(n) (1-\frac{N(n)}{K})$, $n \in \mathbb{N}$
+
+$N_{n+1} - N_n = r\cdot N_n (1-\frac{N_n}{K})$
+
+$N_{n+1} = N_n + r\cdot N_n (1-\frac{N_n}{K})$ Diskretisierung des kontinuierlichen logistischen Modells (rekursiver Berechnungsvortschritt)
+
+\uline{Zahlenbeispiel}
+
+Wir betrachten die diskrete logist. Gleichung mit $N_0$ = 100 und $K=1000$
+
+$N_{n+1} = N_n + r\cdot N_n (1-\frac{N_n}{1000})$
+
+$r = 0.2$: $N_{n+1} = N_n + 0.2 \cdot N_n (1-\frac{N_n}{1000})$
+
+$r = 0.8$: $N_{n+1} = N_n + 0.8 \cdot N_n (1-\frac{N_n}{1000})$
+
+\rule{\textwidth}{0.4mm}\\
+
+\uline{Frage}: Kann es sein, dass die obere Schranke $K$ in einem Zeitschritt bei der Populationsgrösse überschritten wird?
+
+$N_n = K - \epsilon$, wobei $\epsilon$ eine relativ kleine positive Zahl ist
+
+$N_{n+1} \stackrel{?}{>} K$
+
+$N_n + r\cdot N_n(1-\frac{N_n}{K}) \stackrel{?}{>} K$
+
+$(K-\epsilon) + r(K-\epsilon) (1-\frac{K-\epsilon}{K})\stackrel{?}{>} K$
+
+$(K-\epsilon) + r(K-\epsilon) (\frac{\epsilon}{K})\stackrel{?}{>} K$
+
+$K-\epsilon + r\cdot\epsilon - r \cdot \underbrace{\cancel{\frac{\epsilon^2}{K}}}_{\text{sehr klein $\rightarrow$ ignorieren}}\stackrel{?}{>} K$
+
+wenn $-\epsilon + r\cdot \epsilon > 0 \Leftrightarrow r>1$, \uline{dann kann die obere Schranke überschritten werden}
+
+\uline{Qualitative Änderungen}:
+
+\uline{$1<r<2$} Die Oszillation wird mit wachsenden Zeitschritten immer schwächer
+
+\uline{$2\leqslant r < 2.4$} Es entstehen periodische $2$er-Zyklen. Die Amplitude der Oszillation bleibt konstant
+
+\uline{$2.4 \leqslant r < 2.5$} Die $2$er-Zyklen werden instabil
+
+\uline{$2.5 \leqslant r < 2.6$} $4$er-, $8$er-, $16$er-Zyklen
+
+\uline{$r \geqslant 2.6$} Die Lösung wird chaotisch
+
+\rule{\textwidth}{0.4mm}\\
 
 
 
