@@ -596,6 +596,85 @@ $N''(t) < 0$ für $t > \frac{ln(\frac{K-N_0}{N_0})}{r}$
 
 \rule{\textwidth}{0.4mm}\\
 
+\chapter{Vierte Woche}
+
+\section{Ernte und Jagd}
+
+$\frac{N'(t)}{N(t)} = r (1 - \frac{N(t)}{K})$
+
+\uline{Ernte und Jagd}
+
+\uline{Beispiel} $N(t)$: Population von Fischen in einem geschlossenen Gewässer, die logistisch wächst.
+
+$F(t)$: Die zum Zeitpunkt $t$ seit dem Anfang ($t=0$) gefangene Fische.
+
+Annahme: Der Erfolg des Fischfangs pro ZE (Zeiteinheit) $t \rightarrow t + \Delta t$ ist proportional zur aktuellen Anzahl der Fische im Gewässer.
+
+$lim_{\Delta t \to 0}\frac{N(t+\Delta t) - N(t)}{\Delta t} = E \cdot N(t)$
+
+$F'(t) = E \cdot N(t) \Leftrightarrow \frac{F'(t)}{N(t)} = E$ (Fangrate)
+
+$\frac{N'(t)}{N(t)} = r (1 - \frac{N(t)}{K}) - \frac{F'(t)}{N(t)}$
+
+$\frac{N'(t)}{N(t)} = r (1 - \frac{N(t)}{K}) - E$
+
+$N'(t) = r\cdot N(t) (1-\frac{N(t)}{K}) - E\cdot N(t)$
+
+$N'(t) = (r-E) N(t) - \frac{r}{K} (N(t))^2$
+
+$N'(t) = (r-E) N(t) - \frac{r}{K} \frac{(r-E)}{(r-E)} (N(t))^2$
+
+$N'(t) = (r-E) N(t)(1-\frac{r}{K(r-E)}N(t))$
+
+$\frac{N'(t)}{N(t)} = (r-E)(1-\frac{r}{\circled{$K\frac{(r-E)}{r}$}_{\text{neue obere Schranke}}})$
+
+Wir setzen $\tilde{r} = r - E = r (1- \frac{E}{r})$
+
+\& $\tilde{K} = \frac{K(r-E)}{r} = K(1-\frac{E}{r})$
+
+und erhalten: $\frac{N'(t)}{N(t)} = \tilde{r} (1-\frac{N(t)}{\tilde{K}})$
+
+$E$ gross / stark gefischt $\Rightarrow \tilde{K}$ klein / kleine Population $\Rightarrow$ Fangertrag langfristig auch klein
+
+$E$ klein / wenig gefischt $\Rightarrow$ die Fische vermehren sich, man profitiert zu wenig
+
+längerfristig: $\tilde{K} = K(1-\frac{E}{r})$
+
+der asymptotische Ertrag $\underbrace{V(E)}_{\text{maximum?}} = E\cdot K(1-\frac{E}{r}) = E \cdot \tilde{K}$
+
+Maximum von $V(E)$
+
+$V(E) = E\cdot K(1-\frac{E}{r}) = E\cdot K - E^2 \frac{K}{r}$
+
+$V'(E) = K - 2E \frac{K}{r}$
+
+$V'(E) = 0 \Leftrightarrow K - 2E \frac{K}{r} = 0 \Leftrightarrow \circled{$E = \frac{r}{2}$}$ Fangrate für welche der asympt. Ertrag maximal ist
+
+$V(\frac{r}{2}) = \frac{r}{2} K (1- \frac{1}{2}) = \frac{r\cdot K}{4}$ 
+
+\uline{Zahlenbeispiel}
+
+$N(0) = 10^4$, $K = 10^6$, $r = 0.12$
+
+$V_{max} = \frac{r\cdot K}{4} = ... = 3\cdot 10^4$ für $E = \frac{r}{2} = 0.06$
+
+$\tilde{K} = K(1-\frac{\frac{r}{2}}{r}) = \frac{K}{2} = 5\cdot 10^5$
+
+\rule{\textwidth}{0.4mm}\\
+
+\section{Diskretisierung}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
